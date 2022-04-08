@@ -34,7 +34,7 @@ main>.container {
 }
 
 .techIcons {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .checklist {
@@ -44,6 +44,11 @@ main>.container {
 
 .checklist i {
     color: var(--ch-secondary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.messageStyle {
     font-size: 1.5rem;
     font-weight: bold;
 }
