@@ -20,6 +20,7 @@
 
     <!-- Custom CSS! -->
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/prism.css">
 
     <!-- FavIcon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
@@ -62,34 +63,43 @@
 
     <main class="flex-shrink-0">
         <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col-12 col-md-8 order-last order-md-first">
-                    <h1 class="fw-bold">APP NAME: A Coding Challenge</h1>
-                    <h4>Your project description goes here.</h4>
-                    <ul class="checklist">
-                        <li><i class="bi bi-check2-square"></i> CSS and Bootstrap</li>
-                        <li><i class="bi bi-check2-square"></i> Javascript Fundamentals</li>
-                        <li><i class="bi bi-check2-square"></i> Javascript Loops</li>
-                        <li><i class="bi bi-check2-square"></i> Javascript Functions</li>
-                        <li><i class="bi bi-check2-square"></i> Javascript Dom Manipulation</li>
-                        <li><i class="bi bi-check2-square"></i> Javascript Dom If/Then/Else</li>
-                        <li><i class="bi bi-check2-square"></i> Javascript Dom Boolean Logic</li>
-                    </ul>
-                    <div>
-                    </div>
-                    <h3>Technologies Used:</h3>
-                    <div class="techIcons">
-                        <i class="devicon-bootstrap-plain colored"></i>
-                        <i class="devicon-javascript-plain colored"></i>
-                        <i class="devicon-html5-plain colored"></i>
-                        <i class="devicon-css3-plain colored"></i>
-                    </div>
+            <h1>THE CODE FOR: App Name</h1>
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <pre class="line-numbers">
+                        <code class="language-javascript">
+                            function getMessage() {
+                                let msg = document.getElementById("txtMessage").value;
+                                displayMessage(msg);
+                            }
+                            
+                            // Final Step - View
+                            function displayMessage(message) {
+                            
+                                // First get the "ol" element from the page
+                                element = document.getElementById("results");
+                            
+                                // Create a new "li" element
+                                let item = document.createElement("li");
+                            
+                                // Add classes to the "li" element
+                                item.classList.add("list-group-item");
+                            
+                                // Set classes to the "li" element
+                                item.innerHTML = message;
+                            
+                                // Add the new items to the list
+                                element.appendChild(item) = item;
+                            }
+                        </code>
+                    </pre>
                 </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <img src="/img/APPNAMELogo.svg" class="img-fluid">
-                    <div class="mt-5 text-center">
-                        <a type="button" class="btn btn-dark">Try It Out!</a>
-                    </div>
+                <div class="col-12 col-lg-4">
+                    <p class="mb-5"><b>The code is structured in two functions.</b></p>
+                    <h5>getMessage</h5>
+                    <p>"Gets" values from the user.</p>
+                    <h5>displayMessage</h5>
+                    <p>"Displays" the items on the page.</p>
                 </div>
             </div>
         </div>
@@ -122,6 +132,15 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="/js/prism.js"></script>
+    <script>
+        Prism.plugins.NormalizeWhitespace.setDefaults({
+            'remove-trailing': true,
+            'remove-indent': true,
+            'left-trim': true,
+            'right-trim': true
+        })
     </script>
 </body>
 

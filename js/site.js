@@ -9,9 +9,6 @@ function getMessage() {
 // Final Step - View
 function displayMessage(message) {
 
-    // <li class="list-group-item">A list item</li>
-    // let item = `<li class="list-group-item">${message}</li>`;
-
     // First get the "ol" element from the page
     element = document.getElementById("results");
 
